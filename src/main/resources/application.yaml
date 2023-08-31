@@ -1,0 +1,11 @@
+application:
+  kafka:
+    topic: "demo-topic"
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  kafka:
+    bootstrap-servers: "localhost:29092"
+    client-id: "demo-kafka-producer"
+    consumer:
+      group-id: "demo-kafka-group"
